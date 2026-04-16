@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Glory:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-white: #FFFFFF;
+  --color-gray: #999999;
+  --color-bg-black: #141414;
+  --layout-nav-bg-black: #1f1f1f;
+  --nav-bg: #0f0f0f;
+  --active-color: #1a1a1a;
+  --color-red: #e50000;
+  --color-black-footer: #262626;
+  --links-color: #bfbfbf;
+   --main-font: "Manrope", sans-serif;
+}
+
+.bg-black {
+  background-color: var(--color-bg-black);
+}
+.head-text {
+  color: var(--color-white);
+  padding-left: 3px;
+}
+.img-bg {
+  width: 1920px;
+  height: 860px;
+}
+.display-flex {
+  display: flex;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+.align-iteams-center {
+  align-items: center;
+}
+.text-align-center {
+  text-align: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.nav-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-20px);
+  width: 100%;
+}
+.nav-padding {
+  padding: 42px 162px;
+}
+.nav-layout {
+  border: 4px var(--layout-nav-bg-black) solid;
+  border-radius: 8px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  gap: 30px;
+}
+/* nav-bar-width-&-position */
+.width{
+  width: 555px;
+  height: 75px;
+  position: fixed;
+  transform: translate(512px,10px);
+}
+.nav-bg {
+  background-color: var(--nav-bg);
+}
+.icon {
+  gap: 30px;
+  color: var(--color-white);
+}
+a {
+  text-decoration: none;
+  color: var(--links-color);
+  &:hover {
+    color: var(--color-white);
+  }
+}
+a.active {
+  color: var(--color-white);
+  background-color: var(--active-color);
+  border: 1px var(--active-color) solid;
+  border-radius: 8px;
+  padding: 14px 24px;
+}
+.hero-section {
+  font-family: var(--main-font);
+  color: var(--color-white);
+  line-height: 150%;
+  position: relative;
+  transform: translateY(-45px);
+}
+.hero-text {
+  font-family: var(--main-font);
+  font-optical-sizing: none;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-gray);
+  text-align: center;
+  font-size: 18px;
+  padding-top: 14px;
+  padding-bottom: 50px;
+}
+.img-button {
+  width: 28px;
+}
+.button {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 18px 24px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  position: fixed;
+  transform: translateX(205%);
+}
+.bG-footer{
+  background-color: var(--nav-bg);
+  font-family: "Manrope", sans-serif;
+}
+.margin-top{
+  margin-top: 150px;
+}
+.footer-padding{
+  padding: 100px 162px;
+}
+.footer-home{
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+.footer-text{
+  color: var(--color-gray);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  padding-bottom: 14px;
+}
+.footer-icon{
+  border: 1px solid var(--color-black-footer);
+  background-color: var(--active-color);
+  color: var(--color-white);
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  padding: 16px 16px;
+  /* gap: calc((100%-56px * 3 )/3); */
+  gap: 14px;
+}
+.bottom-footer{
+  flex-direction: row;
+  color: var(--color-gray);
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 24px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 162px;
+  border-top: 1px solid #262626;
+  width: 1596px;
+  height: 51px;
+
+}
+/* frist-copyright-pos */
+.footer-bottom-text1{
+    position: relative;
+    transform: translateX(-170px);
+}
+/* second-copyright-pos */
+.footer-bottom-text2{
+  position: relative;
+  transform: translateX(195px);
+  gap: 40px;
+
+}
+/* copyright-border */
+.footer-bottom-border{
+  border-right: 1px solid #262626;
+}
+.footer-icons{
+  display: flex;
+  gap: 14px;
+}
